@@ -35,7 +35,9 @@ public class WindowHandles {
 		util.clickOnLocator(xtwitter);
 		util.clickOnLocator(youTube);
 		util.closeAllWindowsExceptParent(parentWindowId);
-		
+	}
+	
+	public void function() {
 		
 	}
 }
