@@ -37,7 +37,12 @@ public class WindowHandles {
 		util.closeAllWindowsExceptParent(parentWindowId);
 	}
 	
+	public void function2() {
+		
+	}
+	
 	public void function() {
 		
 	}
 }
+
