@@ -41,7 +41,7 @@ public class WindowHandles {
 		
 	}
 	
-	public void function() {
+	public void function3() {
 		
 	}
 }
