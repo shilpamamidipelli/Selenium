@@ -31,5 +31,12 @@ public class Locators {
 		driver.findElement(By.xpath("//select[@name='Country']/option[4]")).click();
 
 	}
+	
+	public void function2() {
+		
+	}
+	public void function() {
+		
+	}
 
 }
