@@ -38,5 +38,8 @@ public class Locators {
 	public void function() {
 		
 	}
+	public void function3() {
+		
+	}
 
 }
