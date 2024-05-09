@@ -38,6 +38,9 @@ public class Locators {
 	public void function() {
 		
 	}
+	public void function4() {
+		
+	}
 	public void function3() {
 		
 	}
