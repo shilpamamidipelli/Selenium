@@ -6,17 +6,84 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.interactions.Actions;
 
+/**
+ * 
+ */
 public class ElementUtil {
-	WebDriver driver;
-	
-	public ElementUtil(WebDriver driver) {
+	 WebDriver driver;
+	 public ElementUtil(WebDriver driver) {
 		 this.driver = driver;
 	}
+	 
+	
+	public void openBrowser(String browserName , String headless) throws ExceptionHandling {
+		switch (browserName){
+		case "chrome" :
+			ChromeOptions co = new ChromeOptions();
+			if (headless.equalsIgnoreCase("headless")) {
+				co.addArguments("--headless");
+			}
+			this.driver = new ChromeDriver(co);
+			break ;
+		case "Edge" :
+			EdgeOptions eo = new EdgeOptions();
+			if (headless.equalsIgnoreCase("headless")) {
+				eo.addArguments("--headless");
+			}
+			
+			driver = new EdgeDriver(eo);
+		case "FireFox" :
+			FirefoxOptions fo = new FirefoxOptions();
+			if (headless.equalsIgnoreCase("headless")) {
+				fo.addArguments("--headless");
+			}
+			
+			this.driver = new FirefoxDriver(fo);
+			break ;
+		case "Safari" :
+			
+			SafariOptions so = new SafariOptions();
+			
+			if (headless.equalsIgnoreCase("headless")) {
+				so.setCapability("headless", headless);
+			}
+			
+			this.driver = new SafariDriver(so);
+			break ;
+		default :
+				throw new ExceptionHandling("Please give chrome / edge / firefox / Safari as browser name");
+		}
+		this.driver.manage().deleteAllCookies();
+		this.driver.manage().window().maximize();
+	}
+	
+	public void isValidURL(String url) {
+		boolean isNotNull = url!=null ;
+		boolean startsWithHttps = url.startsWith("https://") ||url.startsWith("http://") ;
+		if (isNotNull && startsWithHttps ) {
+			this.driver.get(url);
+		}
+		else {
+			throw new ExceptionHandling("Invalid URL");
+		}
+		
+	}
+	
+	
 	
 	public WebElement getEelement(By locator){
-		WebElement ele = driver.findElement(locator) ; 
+		WebElement ele = this.driver.findElement(locator) ; 
 		return ele ;
 	}
 
@@ -27,7 +94,7 @@ public class ElementUtil {
 	
 	
 	public void closeAllWindowsExceptParent(String parentWindowId) throws InterruptedException {
-		Set<String> handles = driver.getWindowHandles();
+		Set<String> handles = this.driver.getWindowHandles();
 		Iterator<String> it = handles.iterator();
 
 		String WindowHandle = null; 
@@ -35,16 +102,16 @@ public class ElementUtil {
 		
 		while(it.hasNext()) {
 			WindowHandle = it.next() ;
-			driver.switchTo().window(WindowHandle);
+			this.driver.switchTo().window(WindowHandle);
 			if (WindowHandle.equals(parentWindowId)) {
 				System.out.println( WindowHandle + " parent window handle with title " + driver.getTitle());
 			}
 			else {
 				System.out.println("closing child window with id " +WindowHandle  + "and title" + driver.getTitle());
-				driver.close();
+				this.driver.close();
 			}
 		}
-		driver.switchTo().window(parentWindowId);
+		this.driver.switchTo().window(parentWindowId);
 		/*
 		 * Object[] windows = handles.toArray(); String parentwindow = null ;
 		 * while(it.hasNext()) { WindowHandle = it.next() ;
@@ -78,7 +145,7 @@ public class ElementUtil {
 	}
 	
 	public void scrollToElement(By windowsTestPageLink) {
-		Actions act = new Actions(driver); 
+		Actions act = new Actions(this.driver); 
 		act
 			.scrollToElement(getEelement(windowsTestPageLink))
 				.click(getEelement(windowsTestPageLink))
