@@ -1,14 +1,22 @@
 package seleniumsessions;
 
-public class TheInternet {
+import org.openqa.selenium.WebDriver;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		
-		//https://testpages.eviltester.com/styled/index.html
-		//https://selectorshub.com/xpath-practice-page/
-		//https://automationpanda.com/2021/12/29/want-to-practice-test-automation-try-these-demo-sites/
+public class TheInternet {
+	WebDriver driver ;
+	String URL = "site" ; 
+	String browserName ="browserName";
+	public TheInternet(WebDriver driver) {
+		this.driver = driver;
 	}
+	public void loadHomePage() throws Exception {
+		
+		Utility util = new Utility(driver);
+		util.openBrowser(ReadConfigProperties.readProp(browserName));
+		util.verifyAndLoadURL(ReadConfigProperties.readProp(URL));
+		
+	}
+
+// create driver and select the browser from config 
 
 }

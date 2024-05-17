@@ -14,7 +14,7 @@ public class WindowHandles {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
-		ElementUtil util = new ElementUtil(driver);
+		Utility util = new Utility(driver);
 		driver.get("https://the-internet.herokuapp.com");
 		String parentWindowId = driver.getWindowHandle();
 		By NewWindowLink =By.xpath("//a[text()='Click Here']"); 
