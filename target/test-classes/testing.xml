@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestInternetTestSuite">
+    <test name="TheInternetTest">
+        <classes>
+            <class name="src.test.java.TheInternetTestSuite.TheInternetTest"/>
+        </classes>
+    </test>
+</suite>

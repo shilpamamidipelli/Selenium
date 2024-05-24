@@ -1,4 +1,4 @@
-package seleniumsessions;
+package TheInternet;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -16,83 +16,36 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
+
+import seleniumsessions.ExceptionHandling;
+import seleniumsessions.ReadConfigProperties;
+
 import org.openqa.selenium.interactions.Actions;
 
-public class Utility {
+public class UtilityForInternet {
 	WebDriver driver;
 	
 	String headless ;
-	public Utility(WebDriver driver) {
-		this.driver = driver;
+	public UtilityForInternet(WebDriver driver) {
+		this.driver=driver;
 		headless = null;
 	}
 
 	@SuppressWarnings("null")
-	public WebDriver openBrowser(String browserName) throws Exception {
-		 
-		try {
-			headless = ReadConfigProperties.readProp("headless");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		switch (browserName) {
-		case "chrome":
-			ChromeOptions co = new ChromeOptions();
-			if (headless.equalsIgnoreCase("headless")) {
-				co.addArguments("--headless");
-			}
-			this.driver = new ChromeDriver(co);
-			break;
-			
-		case "Edge":
-			EdgeOptions eo = new EdgeOptions();
-			if (headless.equalsIgnoreCase("headless")) {
-				eo.addArguments("--headless");
-			}
-			this.driver = new EdgeDriver(eo);
-			break;
-			
-		case "FireFox":
-			FirefoxOptions fo = new FirefoxOptions();
-			if (headless.equalsIgnoreCase("headless")) {
-				fo.addArguments("--headless");
-			}
-			this.driver = new FirefoxDriver(fo);
-			break;
-			
-		case "Safari":
-
-			SafariOptions so = new SafariOptions();
-
-			if (headless.equalsIgnoreCase("headless")) {
-				so.setCapability("headless", headless);
-			}
-			this.driver = new SafariDriver(so);
-			break;
-			
-		default:
-			throw new ExceptionHandling("Please give chrome / edge / firefox / Safari as browser name");
-		}
-		this.driver.manage().deleteAllCookies();
-		this.driver.manage().window().maximize();
-		
-		return this.driver;
-	}
-
 	
-	public  void verifyAndLoadURL(String url) {
+	
+	public WebDriver verifyAndLoadURL(String url ) {
 		boolean isNotNull = url != null;
 		boolean startsWithHttps = url.startsWith("https://") || url.startsWith("http://");
+
 		if (isNotNull && startsWithHttps) {
 			this.driver.get(url);
 		} else {
 			throw new ExceptionHandling("Invalid URL");
 		}
-
+		
+		return this.driver;
 	}
-
 	public WebElement getEelement(By locator) {
 		WebElement ele = this.driver.findElement(locator);
 		return ele;
