@@ -24,18 +24,13 @@ public class Utility {
 	String headless ;
 	public Utility(WebDriver driver) {
 		this.driver = driver;
-		headless = null;
+		headless = "headless";
 	}
 
 	@SuppressWarnings("null")
 	public WebDriver openBrowser(String browserName) throws Exception {
 		 
-		try {
-			headless = ReadConfigProperties.readProp("headless");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 		
 		switch (browserName) {
 		case "chrome":

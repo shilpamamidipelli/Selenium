@@ -15,12 +15,19 @@ public class TheInternetTest extends BaseTest {
 	@Test
 
 	public void OpenPageTest() {
-		try {
-			Assert.assertEquals(internetPage.loadHomePage().getTitle().equalsIgnoreCase("theinternet"), true);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		
+		if (intPage != null) {
+			try {
+				
+				Assert.assertEquals(intPage.loadHomePage().getTitle().equalsIgnoreCase("the internet"), true);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
+		else 
+			System.out.println("Some thing is wrong null is given to the internet page");
+
 	}
 
 	@Test

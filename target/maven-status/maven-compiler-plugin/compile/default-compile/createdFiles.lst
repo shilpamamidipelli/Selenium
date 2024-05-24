@@ -2,11 +2,11 @@ TheInternet/UtilityForInternet.class
 TheInternet/TheInternet.class
 seleniumsessions/Dropdown.class
 TheInternet/ReadConfigPropertiesForInternet.class
+TheInternet/ExceptionHandling.class
 seleniumsessions/SelectMultipleDropdownOptions.class
 seleniumsessions/ExceptionHandling.class
 seleniumsessions/WindowHandles.class
 seleniumsessions/ExplicitWait.class
 seleniumsessions/Locators.class
 seleniumsessions/GetPageDetails.class
-seleniumsessions/ReadConfigProperties.class
 seleniumsessions/Utility.class

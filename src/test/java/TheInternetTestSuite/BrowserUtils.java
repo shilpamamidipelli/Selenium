@@ -12,28 +12,21 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 
-import seleniumsessions.ExceptionHandling;
-import seleniumsessions.ReadConfigProperties;
+import TheInternet.ExceptionHandling;
+import TheInternet.ReadConfigPropertiesForInternet;
 
 public class BrowserUtils {
 
 	WebDriver driver;
 
 	String headless;
-
+	ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet();
 	public WebDriver openBrowser(String browserName) throws Exception {
-
-		try {
-			headless = ReadConfigProperties.readProp("headless");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
+		headless = prop.getProperty("headless");
 		switch (browserName) {
 		case "chrome":
 			ChromeOptions co = new ChromeOptions();
-			if (headless.equalsIgnoreCase("headless")) {
+			if (headless.equalsIgnoreCase("true")) {
 				co.addArguments("--headless");
 			}
 			this.driver = new ChromeDriver(co);
@@ -41,7 +34,7 @@ public class BrowserUtils {
 
 		case "Edge":
 			EdgeOptions eo = new EdgeOptions();
-			if (headless.equalsIgnoreCase("headless")) {
+			if (headless.equalsIgnoreCase("true")) {
 				eo.addArguments("--headless");
 			}
 			this.driver = new EdgeDriver(eo);
@@ -49,7 +42,7 @@ public class BrowserUtils {
 
 		case "FireFox":
 			FirefoxOptions fo = new FirefoxOptions();
-			if (headless.equalsIgnoreCase("headless")) {
+			if (headless.equalsIgnoreCase("true")) {
 				fo.addArguments("--headless");
 			}
 			this.driver = new FirefoxDriver(fo);
@@ -58,7 +51,7 @@ public class BrowserUtils {
 		case "Safari":
 
 			SafariOptions so = new SafariOptions();
-			if (headless.equalsIgnoreCase("headless")) {
+			if (headless.equalsIgnoreCase("true")) {
 				so.setCapability("headless", headless);
 			}
 			this.driver = new SafariDriver(so);

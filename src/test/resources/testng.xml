@@ -2,7 +2,7 @@
 <suite name="TestInternetTestSuite">
     <test name="TheInternetTest">
         <classes>
-            <class name="src.test.java.TheInternetTestSuite.TheInternetTest"/>
+            <class name="TheInternetTestSuite.TheInternetTest"/>
         </classes>
     </test>
 </suite>

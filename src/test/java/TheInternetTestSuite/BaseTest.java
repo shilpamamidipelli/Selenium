@@ -10,19 +10,18 @@ import TheInternet.TheInternet;
 public class BaseTest {
 
 	String browserName = "browserName";
-	TheInternet internetPage;
-
+	TheInternet intPage;
+	BrowserUtils browserUtil = new BrowserUtils();
+	
 	@BeforeSuite
-
 	public void initTest() {
 
-		BrowserUtils browserUtil = new BrowserUtils();
-		WebDriver driver = null;
+
 
 		// create the WebDriver objects
 		try {
-			driver = browserUtil.openBrowser(ReadConfigPropertiesForInternet.getProp(browserName));
-			internetPage = new TheInternet(driver);
+			ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet();
+			intPage = new TheInternet( browserUtil.openBrowser(prop.getProperty(browserName)));
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
