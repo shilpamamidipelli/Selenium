@@ -1,6 +1,4 @@
-package TheInternetTestSuite;
-
-import java.io.IOException;
+package theInternetTestSuite;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,14 +15,13 @@ import TheInternet.ReadConfigPropertiesForInternet;
 
 public class BrowserUtils {
 
-	WebDriver driver;
-
+	protected WebDriver driver;
 	String headless;
-	ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet();
+	ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet(); 
 	public WebDriver openBrowser(String browserName) throws Exception {
 		headless = prop.getProperty("headless");
 		switch (browserName) {
-		case "chrome":
+		case "Chrome":
 			ChromeOptions co = new ChromeOptions();
 			if (headless.equalsIgnoreCase("true")) {
 				co.addArguments("--headless");
@@ -40,7 +37,7 @@ public class BrowserUtils {
 			this.driver = new EdgeDriver(eo);
 			break;
 
-		case "FireFox":
+		case "Firefox":
 			FirefoxOptions fo = new FirefoxOptions();
 			if (headless.equalsIgnoreCase("true")) {
 				fo.addArguments("--headless");
@@ -62,8 +59,11 @@ public class BrowserUtils {
 		}
 		this.driver.manage().deleteAllCookies();
 		this.driver.manage().window().maximize();
-
 		return this.driver;
 	}
 
+
+	public void closeBrowser() {
+		this.driver.close();
+	}
 }

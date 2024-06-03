@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,7 +113,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestInternetTestSuite" title="TheInternetTestSuite.TheInternetTest" class="method navigator-link" hash-for-method="testLinkTest">testLinkTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestInternetTestSuite" title="TheInternetTestSuite.TheInternetTest" class="method navigator-link" hash-for-method="testPageHeading">testPageHeading</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestInternetTestSuite" title="TheInternetTestSuite.TheInternetTest" class="method navigator-link" hash-for-method="testScrollPageToEnd">testScrollPageToEnd</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestInternetTestSuite -->
@@ -150,9 +155,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testLinkTest">
-                  </a> <!-- testLinkTest -->
-                  <span class="method-name">testLinkTest</span>
+                  <a name="testPageHeading">
+                  </a> <!-- testPageHeading -->
+                  <span class="method-name">testPageHeading</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testScrollPageToEnd">
+                  </a> <!-- testScrollPageToEnd -->
+                  <span class="method-name">testScrollPageToEnd</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -209,19 +221,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'OpenPageTest')
 data.setCell(0, 2, 'TheInternetTestSuite.TheInternetTest')
-data.setCell(0, 3, 3984);
+data.setCell(0, 3, 3252);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'NavigateTest')
+data.setCell(1, 1, 'testScrollPageToEnd')
 data.setCell(1, 2, 'TheInternetTestSuite.TheInternetTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 22);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testLinkTest')
+data.setCell(2, 1, 'testPageHeading')
 data.setCell(2, 2, 'TheInternetTestSuite.TheInternetTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 20);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'NavigateTest')
+data.setCell(3, 2, 'TheInternetTestSuite.TheInternetTest')
+data.setCell(3, 3, 1);
 window.suiteTableData['TestInternetTestSuite']= { tableData: data, tableDiv: 'times-div-TestInternetTestSuite'}
 return data;
 }
@@ -259,19 +275,23 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">NavigateTest</span>
-                <span class="method-start">1152 ms</span>
+                <span class="method-start">2004 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">OpenPageTest</span>
-                <span class="method-start">1153 ms</span>
+                <span class="method-start">2005 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testLinkTest</span>
-                <span class="method-start">5138 ms</span>
+                <span class="method-name">testPageHeading</span>
+                <span class="method-start">5257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testScrollPageToEnd</span>
+                <span class="method-start">5277 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">closeSession</span>
-                <span class="method-start">5160 ms</span>
+                <span class="method-start">5310 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

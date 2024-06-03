@@ -1,0 +1,6 @@
+2024-06-03T11:38:31,353 [main] DEBUG TheInternet - [[FirefoxDriver: firefox on mac (c887f7a8-a77e-42aa-a1c4-1a3bd59076c5)] -> xpath: //ul/li[last()]/a[contains(text(),'WYS')]]
+2024-06-03T11:38:31,357 [main] DEBUG TheInternet - org.openqa.selenium.interactions.Actions@4b2a30d
+2024-06-03T13:37:37,466 [main] DEBUG TheInternet - [[ChromeDriver: chrome on mac (e52c25dbd45e69470cec6342edfc0574)] -> xpath: //ul/li[last()]/a[contains(text(),'WYS')]]
+2024-06-03T13:37:37,470 [main] DEBUG TheInternet - org.openqa.selenium.interactions.Actions@c81fd12
+2024-06-03T13:37:37,735 [main] DEBUG TheInternet - org.openqa.selenium.interactions.Actions@c81fd12
+2024-06-03T13:37:37,735 [main] DEBUG TheInternet - org.openqa.selenium.interactions.Actions@c81fd12

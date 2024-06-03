@@ -1,5 +1,6 @@
 package TheInternet;
 
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -7,6 +8,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UtilityForInternet {
 	WebDriver driver;
@@ -37,7 +42,14 @@ public class UtilityForInternet {
 		return ele;
 	}
 
-	public void clickOnLocator(By locator) {
+	public WebElement waitAndGetElement(By locator) {
+
+		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofMillis(100))  ;
+		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));	
+	}
+
+	
+	public void clickOnElement(By locator) {
 		getEelement(locator).click();
 	}
 
@@ -95,5 +107,6 @@ public class UtilityForInternet {
 		act.scrollToElement(getEelement(windowsTestPageLink)).click(getEelement(windowsTestPageLink)).build().perform();
 
 	}
+	
 
 }

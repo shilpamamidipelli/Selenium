@@ -1,4 +1,4 @@
-package TheInternetTestSuite;
+package theInternetTestSuite;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,32 +13,33 @@ public class TheInternetTest extends BaseTest {
 	 */
 
 	@Test
-
 	public void OpenPageTest() {
-		
+		System.out.println("1st test");
+
 		if (intPage != null) {
 			try {
-				
-				Assert.assertEquals(intPage.loadHomePage().getTitle().equalsIgnoreCase("the internet"), true);
+				Assert.assertEquals(intPage.loadHomePage().getTitle().equals("The Internet"), true);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
-		else 
+		} else {
 			System.out.println("Some thing is wrong null is given to the internet page");
+		}
+	}
+
+	@Test
+	public void testPageHeading() {
+		System.out.println("2nd test");
+		Assert.assertEquals(intPage.getPageHeading().equals("Welcome to the-internet"),true);
 
 	}
 
 	@Test
 
-	public void testLinkTest() {
-
-	}
-
-	@Test
-
-	public void NavigateTest() {
+	public void testScrollPageToEnd() {
+		System.out.println("3rd test");
+		Assert.assertEquals(intPage.scrollToEnd().equals("WYSIWYG Editor"),true);
 
 	}
 

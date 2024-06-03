@@ -5,7 +5,9 @@ TheInternet/ReadConfigPropertiesForInternet.class
 TheInternet/ExceptionHandling.class
 seleniumsessions/SelectMultipleDropdownOptions.class
 seleniumsessions/ExceptionHandling.class
+TheInternet/CheckBox.class
 seleniumsessions/WindowHandles.class
+TheInternet/ConstantsPage.class
 seleniumsessions/ExplicitWait.class
 seleniumsessions/Locators.class
 seleniumsessions/GetPageDetails.class
