@@ -16,8 +16,9 @@ import TheInternet.ReadConfigPropertiesForInternet;
 public class BrowserUtils {
 
 	protected WebDriver driver;
-	String headless;
-	ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet(); 
+	protected String headless;
+	protected ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet(); 
+	
 	public WebDriver openBrowser(String browserName) throws Exception {
 		headless = prop.getProperty("headless");
 		switch (browserName) {

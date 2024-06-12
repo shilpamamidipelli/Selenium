@@ -3,12 +3,12 @@ package theInternetTestSuite;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CheckBoxTest {
+public class CheckBoxTest extends BaseTest {
 
 	
 	@Test
-	public void loadCheckBoxPage() {
-		
+	public void loadCheckBoxPage() throws Exception {
+		Assert.assertEquals(homePage.navigateToCheckBoxPage().checkURL(), true);
 	}
 	
 	@Test

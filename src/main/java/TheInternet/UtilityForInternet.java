@@ -2,9 +2,11 @@ package TheInternet;
 
 import java.time.Duration;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,62 +16,95 @@ import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class UtilityForInternet {
-	WebDriver driver;
-	
+	//WebDriver utildriver;
+	Actions act;
 	String headless ;
-	public UtilityForInternet(WebDriver driver) {
-		this.driver=driver;
+	//private WebDriver utildriver;
+	public UtilityForInternet() {
+		//this.utildriver=driver;
+		//this.act = new Actions(driver);
 		headless = null;
 	}
+	
+	
+	public WebDriver scrollToLink(WebDriver utildriver ,By linkName) {
+		
+		try {
+			scrollToElement(waitAndGetElement(utildriver, linkName));
+		} catch (Exception e) {
+			scrollToElementJS(utildriver, linkName);
+		}
+		return utildriver;
+	}
+	
+	public void scrollToElement(WebElement lastLinkEle) {
+		//logger.debug(act);
+		act.scrollToElement(lastLinkEle).perform();
+		// logger.debug(act);
+		// act.moveToElement(this.util.waitAndGetElement(locator)).build().perform();
+	}
+	
+	public boolean ifURLcontains(WebDriver driver, String str) {
+		driver.getCurrentUrl().contains("the-internet.herokuapp.com");
+		return false;
+	}
 
-	@SuppressWarnings("null")
+	private void scrollToElementJS(WebDriver driver, By lastLink) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", waitAndGetElement(driver, lastLink));
+	}
 	
-	
-	public WebDriver verifyAndLoadURL(String url ) {
+	public  void verifyURL(String url ) {
 		boolean isNotNull = url != null;
 		boolean startsWithHttps = url.startsWith("https://") || url.startsWith("http://");
 
 		if (isNotNull && startsWithHttps) {
-			this.driver.get(url);
+			
 		} else {
 			throw new ExceptionHandling("Invalid URL");
 		}
-		
-		return this.driver;
 	}
-	public WebElement getEelement(By locator) {
-		WebElement ele = this.driver.findElement(locator);
+	
+	public WebElement getEelement(WebDriver utildriver, By locator) {
+		WebElement ele = utildriver.findElement(locator);
 		return ele;
 	}
 
-	public WebElement waitAndGetElement(By locator) {
-
-		Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofMillis(100))  ;
+	public WebElement waitAndGetElement(WebDriver utildriver,By locator) {
+		Wait<WebDriver> wait = new WebDriverWait(utildriver, Duration.ofMillis(100))  ;
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));	
 	}
 
+	public List<WebElement> waitAndGetElements(WebDriver utildriver,By locator) {
+		
+		Wait<WebDriver> wait = new WebDriverWait(utildriver, Duration.ofMillis(100))  ;
+		List<WebElement> list = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
+		//wait.until(ExpectedConditions.presenceOfElementLocated(locator);
+		return list ;	
+	}
 	
-	public void clickOnElement(By locator) {
-		getEelement(locator).click();
+	public void clickOnElement(WebDriver utildriver,By locator) {
+		utildriver.findElement(locator).click();
+		//getElement(utildriver,locator).click(); 
 	}
 
-	public void closeAllWindowsExceptParent(String parentWindowId) throws InterruptedException {
-		Set<String> handles = this.driver.getWindowHandles();
+	public void closeAllWindowsExceptParent(WebDriver utildriver,String parentWindowId) throws InterruptedException {
+		Set<String> handles = utildriver.getWindowHandles();
 		Iterator<String> it = handles.iterator();
 
 		String WindowHandle = null;
 
 		while (it.hasNext()) {
 			WindowHandle = it.next();
-			this.driver.switchTo().window(WindowHandle);
+			utildriver.switchTo().window(WindowHandle);
 			if (WindowHandle.equals(parentWindowId)) {
-				System.out.println(WindowHandle + " parent window handle with title " + driver.getTitle());
+				System.out.println(WindowHandle + " parent window handle with title " + utildriver.getTitle());
 			} else {
-				System.out.println("closing child window with id " + WindowHandle + "and title" + driver.getTitle());
-				this.driver.close();
+				System.out.println("closing child window with id " + WindowHandle + "and title" + utildriver.getTitle());
+				utildriver.close();
 			}
 		}
-		this.driver.switchTo().window(parentWindowId);
+		utildriver.switchTo().window(parentWindowId);
 		/*
 		 * Object[] windows = handles.toArray(); String parentwindow = null ;
 		 * while(it.hasNext()) { WindowHandle = it.next() ;
@@ -101,12 +136,18 @@ public class UtilityForInternet {
 		 */
 
 	}
-
-	public void scrollToElement(By windowsTestPageLink) {
-		Actions act = new Actions(this.driver);
-		act.scrollToElement(getEelement(windowsTestPageLink)).click(getEelement(windowsTestPageLink)).build().perform();
-
+	public String getElementText(WebDriver driver , By locator) {
+		String elementText = "NULL";
+		try {
+			elementText = waitAndGetElement(driver, locator).getText();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return elementText;
 	}
-	
 
+	public void scrollToElement(WebDriver utildriver,By windowsTestPageLink) {
+		Actions act = new Actions(utildriver);
+		//act.scrollToElement(.build().perform();
+	}
 }
