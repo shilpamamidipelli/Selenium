@@ -44,8 +44,7 @@ public class CheckBoxPage {
 						checkBoxeStatus = "only second";
 					else if(i==1 & checkBoxeStatus.equals("first") )
 						checkBoxeStatus = "both";
-				}
-				
+				}	
 			}
 			return checkBoxeStatus;
 	}
@@ -53,12 +52,47 @@ public class CheckBoxPage {
 	public void clickFirstCheckBox() {
 		List<WebElement> chkboxes = util.waitAndGetElements(this.driver, checBoxEle);
 		String checkBoxeStatus = getWhichCheckBoxisSelected(chkboxes);
-		if(!(checkBoxeStatus.equals("first") && checkBoxeStatus.equals("both")) ){
+		
+		if (checkBoxeStatus.equals("both")){
+			chkboxes.get(0).findElement(checBoxEle).click(); // unselect first and second checkboxes and select agan
+			chkboxes.get(1).findElement(checBoxEle).click();
 			chkboxes.get(0).findElement(checBoxEle).click();
 		}
+		if(checkBoxeStatus.equals("only second") ){
+			chkboxes.get(1).findElement(checBoxEle).click(); // un select first 
+			chkboxes.get(0).findElement(checBoxEle).click();
+		}
+	}
+	
+	public void clickSecondCheckBox() {
+		List<WebElement> chkboxes = util.waitAndGetElements(this.driver, checBoxEle);
+		String checkBoxeStatus = getWhichCheckBoxisSelected(chkboxes);
+
+		if (checkBoxeStatus.equals("both")){
+			chkboxes.get(0).findElement(checBoxEle).click(); // unselect first and second checkboxes and select agan
+			chkboxes.get(1).findElement(checBoxEle).click();
+			chkboxes.get(1).findElement(checBoxEle).click();
+		}
+		if(checkBoxeStatus.equals("first")){
+			chkboxes.get(0).findElement(checBoxEle).click(); // un select first 
+			chkboxes.get(1).findElement(checBoxEle).click();
+			
+		}	
 		
-		
-		
-		
+	}
+	
+	public void clickBothCheckBoxes() {
+		List<WebElement> chkboxes = util.waitAndGetElements(this.driver, checBoxEle);
+		String checkBoxeStatus = getWhichCheckBoxisSelected(chkboxes);
+
+		if(checkBoxeStatus.equals("first")){
+			//chkboxes.get(0).findElement(checBoxEle).click(); // un select first 
+			chkboxes.get(1).findElement(checBoxEle).click();
+			
+		}	
+		if(checkBoxeStatus.equals("only second") ){
+			//chkboxes.get(1).findElement(checBoxEle).click(); // un select first 
+			chkboxes.get(0).findElement(checBoxEle).click();
+		}
 	}
 }
