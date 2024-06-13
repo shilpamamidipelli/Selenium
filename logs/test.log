@@ -4,3 +4,303 @@
 2024-06-03T13:37:37,470 [main] DEBUG TheInternet - org.openqa.selenium.interactions.Actions@c81fd12
 2024-06-03T13:37:37,735 [main] DEBUG TheInternet - org.openqa.selenium.interactions.Actions@c81fd12
 2024-06-03T13:37:37,735 [main] DEBUG TheInternet - org.openqa.selenium.interactions.Actions@c81fd12
+2024-06-12T17:14:19,214 [main] DEBUG HomePage - https://the-internet.herokuapp.com
+2024-06-12T17:14:22,524 [main] DEBUG HomePage - Open URL check return driver
+2024-06-12T17:14:22,525 [main] DEBUG HomePage - page load then check current url match with expected URL
+2024-06-12T17:14:22,525 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:14:22,531 [main] DEBUG HomePage - true
+2024-06-12T17:16:28,979 [main] DEBUG HomePage - https://the-internet.herokuapp.com
+2024-06-12T17:16:32,220 [main] DEBUG HomePage - Open URL check return driver
+2024-06-12T17:16:32,220 [main] DEBUG HomePage - page load then check current url match with expected URL
+2024-06-12T17:16:32,220 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:16:32,226 [main] DEBUG HomePage - true
+2024-06-12T17:28:19,100 [main] DEBUG HomePage - Base Test
+2024-06-12T17:28:20,535 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:28:20,536 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T17:28:20,546 [main] DEBUG HomePage - https://the-internet.herokuapp.com
+2024-06-12T17:28:23,800 [main] DEBUG HomePage - Open URL check return driver
+2024-06-12T17:28:23,800 [main] DEBUG HomePage - page load then check current url match with expected URL
+2024-06-12T17:28:23,800 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:28:23,804 [main] DEBUG HomePage - true
+2024-06-12T17:58:12,624 [main] DEBUG HomePage - Base Test
+2024-06-12T17:58:14,135 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:58:14,137 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T17:58:14,138 [main] DEBUG HomePage - https://the-internet.herokuapp.com
+2024-06-12T17:58:17,382 [main] DEBUG HomePage - Open URL check return driver
+2024-06-12T17:58:17,382 [main] DEBUG HomePage - page load then check current url match with expected URL
+2024-06-12T17:58:17,382 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:58:17,384 [main] DEBUG HomePage - true
+2024-06-12T17:58:17,387 [main] DEBUG HomePage - Base Test
+2024-06-12T17:58:18,402 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:58:18,404 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T17:58:18,946 [main] DEBUG HomePage - Base Test
+2024-06-12T17:58:20,026 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:58:20,027 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T17:58:20,027 [main] DEBUG HomePage - CheckBox Test  page ** TheInternet.HomePage@159a48a6
+2024-06-12T17:58:20,029 [main] DEBUG HomePage - Base Test
+2024-06-12T17:58:21,077 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:58:21,078 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T17:58:21,079 [main] DEBUG HomePage - Base Test
+2024-06-12T17:58:22,145 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:58:22,146 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T17:58:22,148 [main] DEBUG HomePage - Base Test
+2024-06-12T17:58:23,567 [main] DEBUG HomePage - get the current URL
+2024-06-12T17:58:23,568 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T19:41:20,722 [main] DEBUG HomePage - Base Test
+2024-06-12T19:41:22,812 [main] DEBUG HomePage - get the current URL
+2024-06-12T19:41:22,813 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T19:41:22,821 [main] DEBUG HomePage - Trying to see what the driver object is passed to next Class
+2024-06-12T19:41:22,824 [main] DEBUG HomePage - Trying to see what the driver object is passed to next test
+2024-06-12T19:41:22,825 [main] DEBUG HomePage - https://the-internet.herokuapp.com
+2024-06-12T19:41:26,047 [main] DEBUG HomePage - Open URL check return driver
+2024-06-12T19:41:26,047 [main] DEBUG HomePage - page load then check current url match with expected URL
+2024-06-12T19:41:26,047 [main] DEBUG HomePage - get the current URL
+2024-06-12T19:41:26,054 [main] DEBUG HomePage - true
+2024-06-12T19:41:26,057 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:41:26,059 [main] DEBUG HomePage - Trying to see what the driver object is passed to next test
+2024-06-12T19:41:26,079 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:41:26,080 [main] DEBUG HomePage - after Class
+2024-06-12T19:41:26,080 [main] DEBUG HomePage - Trying to see what the driver object is passed to next Class
+2024-06-12T19:41:26,081 [main] DEBUG HomePage - Trying to see what the driver object is passed to next test
+2024-06-12T19:41:26,084 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:41:26,085 [main] DEBUG HomePage - Trying to see what the driver object is passed to next test
+2024-06-12T19:41:26,085 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:41:26,086 [main] DEBUG HomePage - Trying to see what the driver object is passed to next test
+2024-06-12T19:41:26,086 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:41:26,087 [main] DEBUG HomePage - Trying to see what the driver object is passed to next test
+2024-06-12T19:41:26,087 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:41:26,087 [main] DEBUG HomePage - after Class
+2024-06-12T19:42:30,040 [main] DEBUG HomePage - Base Test
+2024-06-12T19:42:31,212 [main] DEBUG HomePage - get the current URL
+2024-06-12T19:42:31,213 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T19:42:31,219 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T19:42:31,222 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:42:31,223 [main] DEBUG HomePage - https://the-internet.herokuapp.com
+2024-06-12T19:42:34,466 [main] DEBUG HomePage - Open URL check return driver
+2024-06-12T19:42:34,466 [main] DEBUG HomePage - page load then check current url match with expected URL
+2024-06-12T19:42:34,466 [main] DEBUG HomePage - get the current URL
+2024-06-12T19:42:34,468 [main] DEBUG HomePage - true
+2024-06-12T19:42:34,471 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:42:34,472 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:42:34,492 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:42:34,492 [main] DEBUG HomePage - after Class
+2024-06-12T19:42:34,492 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T19:42:34,493 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:42:34,496 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:42:34,496 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:42:34,497 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:42:34,497 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:42:34,498 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:42:34,498 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:42:34,499 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:42:34,499 [main] DEBUG HomePage - after Class
+2024-06-12T19:44:51,040 [main] DEBUG HomePage - Base Test
+2024-06-12T19:44:52,297 [main] DEBUG HomePage - Base Test   ** about:blank
+2024-06-12T19:44:52,304 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T19:44:52,307 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:44:55,480 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:44:55,481 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:44:55,502 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:44:55,502 [main] DEBUG HomePage - after Class
+2024-06-12T19:44:55,503 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T19:44:55,503 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:44:55,506 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:44:55,506 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:44:55,507 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:44:55,508 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:44:55,508 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:44:55,509 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T19:44:55,509 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T19:44:55,509 [main] DEBUG HomePage - after Class
+2024-06-12T21:22:58,880 [main] DEBUG HomePage - Base Test
+2024-06-12T21:23:00,608 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T21:23:00,611 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:23:03,811 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:23:03,813 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:23:03,834 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:23:03,835 [main] DEBUG HomePage - after Class
+2024-06-12T21:23:03,835 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T21:23:03,836 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:23:03,839 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:23:03,839 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:23:03,840 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:23:03,840 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:23:03,841 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:23:03,841 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:23:03,842 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:23:03,842 [main] DEBUG HomePage - after Class
+2024-06-12T21:31:56,574 [main] DEBUG HomePage - Base Test
+2024-06-12T21:31:57,862 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T21:31:57,865 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:32:01,131 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:32:01,132 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:32:01,152 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:32:01,153 [main] DEBUG HomePage - TheInternet.HomePage@b9dfc5a
+2024-06-12T21:32:01,153 [main] DEBUG HomePage - after Class
+2024-06-12T21:32:01,153 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T21:32:01,154 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:32:01,156 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:49:28,019 [main] DEBUG HomePage - Base Test
+2024-06-12T21:49:29,392 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T21:49:29,396 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:49:32,682 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:49:32,683 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:49:32,705 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T21:49:32,705 [main] DEBUG HomePage - TheInternet.HomePage@b9dfc5a
+2024-06-12T21:49:32,710 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T21:49:32,710 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T21:49:32,711 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T22:17:41,149 [main] DEBUG HomePage - Base Test
+2024-06-12T22:17:42,439 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T22:17:42,442 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T22:17:45,947 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T22:17:45,949 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T22:17:45,970 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T22:17:45,971 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T22:17:45,976 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T22:17:45,976 [main] DEBUG HomePage - TheInternet.HomePage@dffa30b
+2024-06-12T22:17:45,979 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T22:17:45,979 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T22:17:45,980 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T23:46:10,076 [main] DEBUG HomePage - Base Test
+2024-06-12T23:46:11,766 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T23:46:11,769 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T23:46:15,017 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T23:46:15,018 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T23:46:15,038 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T23:46:15,039 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T23:46:15,039 [main] DEBUG HomePage - FirefoxDriver: firefox on mac (9ab9c26e-681d-43a9-927a-d876ca0e507c)
+2024-06-12T23:46:15,382 [main] DEBUG HomePage - Aftermethod 
+2024-06-12T23:46:15,382 [main] DEBUG HomePage - TheInternet.HomePage@4cdd2c73
+2024-06-12T23:46:15,382 [main] DEBUG HomePage - FirefoxDriver: firefox on mac (9ab9c26e-681d-43a9-927a-d876ca0e507c)
+2024-06-12T23:46:16,432 [main] DEBUG HomePage - @BeforeClasss
+2024-06-12T23:46:16,433 [main] DEBUG HomePage - BeforeMethod
+2024-06-12T23:46:16,434 [main] DEBUG HomePage - Aftermethod 
+2024-06-13T00:51:06,557 [main] DEBUG BaseTest - Base Test
+2024-06-13T00:51:08,672 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T00:51:08,676 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:51:11,867 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:51:11,869 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:51:11,891 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:51:11,891 [main] DEBUG BaseTest - TheInternet.HomePage@b9dfc5a
+2024-06-13T00:51:11,891 [main] DEBUG HomePage - FirefoxDriver: firefox on mac (112d327a-c68c-4a9b-b9af-99a5519ef1c7)
+2024-06-13T00:51:12,231 [main] DEBUG HomePage - @BeforeClasss
+2024-06-13T00:51:12,231 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:51:12,233 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:53:11,729 [main] DEBUG BaseTest - Base Test
+2024-06-13T00:53:12,959 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T00:53:12,961 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:53:16,421 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:53:16,423 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:53:16,444 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:53:16,445 [main] DEBUG BaseTest - TheInternet.HomePage@b9dfc5a
+2024-06-13T00:53:16,445 [main] DEBUG HomePage - FirefoxDriver: firefox on mac (1a9f8f72-d28e-447c-816e-8d55bbf148cc)
+2024-06-13T00:53:16,772 [main] DEBUG HomePage - @BeforeClasss
+2024-06-13T00:53:16,773 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:53:16,773 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:56:03,990 [main] DEBUG BaseTest - Base Test
+2024-06-13T00:56:05,237 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T00:56:05,240 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:56:08,531 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:56:08,532 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:56:08,553 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:56:08,554 [main] DEBUG BaseTest - TheInternet.HomePage@5116ac09
+2024-06-13T00:56:08,554 [main] DEBUG HomePage - FirefoxDriver: firefox on mac (eca540a6-fb97-4449-a3e0-e73d14fc9168)
+2024-06-13T00:56:08,882 [main] DEBUG HomePage - @BeforeClasss
+2024-06-13T00:56:08,883 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:56:08,883 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:58:03,106 [main] DEBUG BaseTest - Base Test
+2024-06-13T00:58:04,364 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T00:58:04,367 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:58:07,591 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:58:07,593 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:58:07,613 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T00:58:07,614 [main] DEBUG BaseTest - TheInternet.HomePage@b9dfc5a
+2024-06-13T00:58:07,614 [main] DEBUG HomePage - FirefoxDriver: firefox on mac (a794b84c-58e3-4e29-8c30-fd1b43a40f0f)
+2024-06-13T00:58:07,945 [main] DEBUG HomePage - @BeforeClasss
+2024-06-13T00:58:07,946 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T00:58:07,947 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:00:00,855 [main] DEBUG BaseTest - Base Test
+2024-06-13T01:00:02,001 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T01:00:02,004 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:00:05,220 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:00:05,222 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:00:05,243 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:00:05,243 [main] DEBUG BaseTest - TheInternet.HomePage@b9dfc5a
+2024-06-13T01:00:05,243 [main] DEBUG HomePage - FirefoxDriver: firefox on mac (cc3ec539-34b6-4504-8102-81b1d5add1a4)
+2024-06-13T01:00:05,580 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T01:00:05,580 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:00:05,581 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:06:49,027 [main] DEBUG BaseTest - Base Test
+2024-06-13T01:06:50,296 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T01:06:50,299 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:06:50,300 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T01:06:53,523 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:06:53,524 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:06:53,525 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T01:06:53,545 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:06:53,546 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T01:06:53,546 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:06:53,549 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:18:24,140 [main] DEBUG BaseTest - Base Test
+2024-06-13T01:18:25,393 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T01:18:25,396 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:18:25,397 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T01:18:28,626 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:18:28,627 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:18:28,628 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T01:18:28,649 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:18:28,650 [main] DEBUG BaseTest - @BeforeClasss
+2024-06-13T01:18:28,651 [main] DEBUG BaseTest - BeforeMethod
+2024-06-13T01:18:28,654 [main] DEBUG BaseTest - Aftermethod 
+2024-06-13T01:19:08,782 [main] DEBUG BaseTest - Base Test
+2024-06-13T01:19:10,075 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T01:19:13,262 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T01:26:49,045 [main] DEBUG BaseTest - Base Test
+2024-06-13T01:26:50,263 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T01:26:53,491 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T01:41:28,116 [main] DEBUG BaseTest - set up the home page and load page
+2024-06-13T01:41:29,386 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T01:41:32,672 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T01:44:59,964 [main] DEBUG BaseTest - set up the home page and load page
+2024-06-13T01:45:01,193 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T01:45:04,590 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T01:47:01,295 [main] DEBUG BaseTest - set up the home page and load page
+2024-06-13T01:47:02,553 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T01:47:05,779 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T01:55:26,011 [main] DEBUG BaseTest - set up the home page and load page
+2024-06-13T01:55:27,642 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T01:55:30,862 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T01:55:30,881 [main] DEBUG HomePageTest - HP
+2024-06-13T02:00:06,664 [main] DEBUG BaseTest - set up the home page and load page
+2024-06-13T02:00:07,942 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T02:00:11,199 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T02:00:11,221 [main] DEBUG HomePageTest - HP
+2024-06-13T02:00:44,376 [main] DEBUG BaseTest - set up the home page and load page
+2024-06-13T02:00:45,594 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T02:00:48,855 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T02:00:48,876 [main] DEBUG HomePageTest - HP
+2024-06-13T02:02:14,791 [main] DEBUG BaseTest - set up the home page and load page
+2024-06-13T02:02:15,937 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T02:02:19,163 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T02:02:19,184 [main] DEBUG HomePageTest - HP
+2024-06-13T04:19:00,374 [main] DEBUG BaseTest - set up
+2024-06-13T04:19:02,124 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T04:19:05,512 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T04:19:05,532 [main] DEBUG HomePageTest - HP
+2024-06-13T04:20:00,260 [main] DEBUG BaseTest - set up
+2024-06-13T04:20:01,540 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T04:20:04,803 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T04:20:04,824 [main] DEBUG HomePageTest - HP
+2024-06-13T04:33:38,159 [main] DEBUG BaseTest - set up
+2024-06-13T04:33:39,455 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T04:33:42,674 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T04:33:42,696 [main] DEBUG HomePageTest - HP
+2024-06-13T04:34:22,775 [main] DEBUG BaseTest - set up
+2024-06-13T04:34:24,011 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T04:34:27,250 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T04:34:27,271 [main] DEBUG HomePageTest - HP
+2024-06-13T04:38:56,550 [main] DEBUG BaseTest - set up
+2024-06-13T04:38:57,720 [main] DEBUG HomePageTest - HomePage test1
+2024-06-13T04:39:00,937 [main] DEBUG HomePageTest - HomePage test2
+2024-06-13T04:39:00,955 [main] DEBUG HomePageTest - HP

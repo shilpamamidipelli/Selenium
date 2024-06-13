@@ -1,29 +1,66 @@
 package theInternetTestSuite;
 
-import org.testng.Assert;
+import org.apache.logging.log4j.LogManager;
+import base.BaseTest;
+import org.apache.logging.log4j.Logger;
+import org.testng.annotations.BeforeClass;
+//import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class CheckBoxTest extends BaseTest {
+import TheInternet.CheckBoxPage;
 
-	
-	@Test
-	public void loadCheckBoxPage() throws Exception {
-		Assert.assertEquals(homePage.navigateToCheckBoxPage().checkURL(), true);
-	}
-	
-	@Test
-	public void isDefCheckBoxSelected() {
+public class CheckBoxTest extends BaseTest {
+	private static final Logger logger = LogManager.getLogger(CheckBoxTest.class);
+
+	@BeforeClass
+	public void call() {
+
+		if(driver ==null ) {
+			System.err.println("driver isas null!");
+
+		}
 		
-	}
-	
-	@Test
-	public void selectBothCheckBox() {
+		if(homePage ==null)
+		{
+			System.err.println("homepage is null!");
+		}
 		
-	}
-	
-	
-	@Test
-	public void deSelectBothCheckBox() {
+		if(chkPage ==null)
+		{
+			System.err.println("chkPage is null!");
+		}
 		
+		else {
+			chkPage = new CheckBoxPage(driver);
+		}
+
+
+		/*
+		 * if (homePage == null) { System.err.println("homePage is null!"); }else {
+		 * logger.debug(homePage.checkPagevalue); }
+		 */
 	}
+
+	@Test(priority = 1)
+	public void loadCheckBoxPage()  {
+		if (chkPage == null) {
+            System.err.println("homePage is null!");
+        }else {
+        	chkPage.navigateToCheckBoxPage();
+    		//Assert.assertEquals(df.navigateToCheckBoxPage(df.driver).checkURL(), true);
+        }
+
+	}
+
+	/*
+	 * @Test(priority = 2) public void selectFirstCheckBox() {
+	 * chkPage.clickFirstCheckBox(); }
+	 *
+	 * @Test(priority = 3) public void selectSecondCheckBox() {
+	 * chkPage.clickSecondCheckBox(); }
+	 *
+	 * @Test(priority = 4) public void selectBothCheckBox() {
+	 * chkPage.clickBothCheckBoxes(); }
+	 */
+
 }

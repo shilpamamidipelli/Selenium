@@ -1,13 +1,8 @@
 package seleniumsessions;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
 public class WindowHandles {
 
@@ -17,12 +12,12 @@ public class WindowHandles {
 		Utility util = new Utility(driver);
 		driver.get("https://the-internet.herokuapp.com");
 		String parentWindowId = driver.getWindowHandle();
-		By NewWindowLink =By.xpath("//a[text()='Click Here']"); 
+		By NewWindowLink =By.xpath("//a[text()='Click Here']");
 		By windowsTestPageLink = By.xpath("//a[contains(text(),\"Multiple\")]");
 		util.scrollToElement(windowsTestPageLink);
 		util.clickOnLocator(NewWindowLink);
 		util.closeAllWindowsExceptParent(parentWindowId);
-		
+
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		parentWindowId = driver.getWindowHandle();
 		Thread.sleep(1000);
@@ -36,13 +31,13 @@ public class WindowHandles {
 		util.clickOnLocator(youTube);
 		util.closeAllWindowsExceptParent(parentWindowId);
 	}
-	
+
 	public void function2() {
-		
+
 	}
-	
+
 	public void function3() {
-		
+
 	}
 }
 

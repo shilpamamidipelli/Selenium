@@ -1,7 +1,5 @@
 package seleniumsessions;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -18,8 +16,8 @@ public class GetPageDetails {
 		System.out.println("The the page title is "+title);
 		driver.navigate().to("https://google.com");
 		driver.manage().window().maximize();
-		// wait (i ) untill : fluent wait (c) -- webdriver wait (c) 
-		// implicit wait 
+		// wait (i ) untill : fluent wait (c) -- webdriver wait (c)
+		// implicit wait
 		Thread.sleep(1000);
 		 driver.navigate().refresh();
 		driver.navigate().back();

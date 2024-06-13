@@ -1,11 +1,12 @@
 package seleniumsessions;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Dropdown {
 
@@ -22,9 +23,9 @@ public class Dropdown {
 		Thread.sleep(1000);
 		//sdrop.selectByIndex(2);
 		//Thread.sleep(1000);
-		
+
 		List<WebElement> options = driver.findElements(By.tagName("option"));
-		
+
 		for (WebElement dropdownopt :  options) {
 			System.out.println("inside the loop" + dropdownopt.getText());
 			if(dropdownopt.getText().equals("Option 1") ){
@@ -33,7 +34,7 @@ public class Dropdown {
 				Thread.sleep(1000);
 			}
 		}
-		
+
 		driver.quit();
 	}
 

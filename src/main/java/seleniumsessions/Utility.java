@@ -1,6 +1,5 @@
 package seleniumsessions;
 
-import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -9,18 +8,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
-import org.openqa.selenium.interactions.Actions;
 
 public class Utility {
 	WebDriver driver;
-	
+
 	String headless ;
 	public Utility(WebDriver driver) {
 		this.driver = driver;
@@ -29,9 +27,9 @@ public class Utility {
 
 	@SuppressWarnings("null")
 	public WebDriver openBrowser(String browserName) throws Exception {
-		 
 
-		
+
+
 		switch (browserName) {
 		case "chrome":
 			ChromeOptions co = new ChromeOptions();
@@ -40,7 +38,7 @@ public class Utility {
 			}
 			this.driver = new ChromeDriver(co);
 			break;
-			
+
 		case "Edge":
 			EdgeOptions eo = new EdgeOptions();
 			if (headless.equalsIgnoreCase("headless")) {
@@ -48,7 +46,7 @@ public class Utility {
 			}
 			this.driver = new EdgeDriver(eo);
 			break;
-			
+
 		case "FireFox":
 			FirefoxOptions fo = new FirefoxOptions();
 			if (headless.equalsIgnoreCase("headless")) {
@@ -56,7 +54,7 @@ public class Utility {
 			}
 			this.driver = new FirefoxDriver(fo);
 			break;
-			
+
 		case "Safari":
 
 			SafariOptions so = new SafariOptions();
@@ -66,17 +64,17 @@ public class Utility {
 			}
 			this.driver = new SafariDriver(so);
 			break;
-			
+
 		default:
 			throw new ExceptionHandling("Please give chrome / edge / firefox / Safari as browser name");
 		}
 		this.driver.manage().deleteAllCookies();
 		this.driver.manage().window().maximize();
-		
+
 		return this.driver;
 	}
 
-	
+
 	public  void verifyAndLoadURL(String url) {
 		boolean isNotNull = url != null;
 		boolean startsWithHttps = url.startsWith("https://") || url.startsWith("http://");
@@ -129,19 +127,19 @@ public class Utility {
 		 * " window handle with " + driver.getTitle()); Thread.sleep(1000); } else {
 		 * System.out.println("closing child window " + driver.getTitle());
 		 * driver.close(); }
-		 * 
+		 *
 		 * } if (!parentwindow.isEmpty()) driver.switchTo().window(parentwindow) ; else
 		 * System.out.print("No parent window");
-		 * 
-		 * 
+		 *
+		 *
 		 * for (int i = windows.length ; i >=0 ; --i) { if( i-1 > 0 ) {
 		 * driver.switchTo().window(windows[i-1].toString());
 		 * System.out.println(driver.getTitle()); Thread.sleep(1000); driver.close(); }
 		 * if (i==0 ) { driver.switchTo().window(windows[i].toString());
 		 * System.out.println(driver.getTitle() + " is the parent window"); }
-		 * 
+		 *
 		 * }
-		 * 
+		 *
 		 */
 
 	}

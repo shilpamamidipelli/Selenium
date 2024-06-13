@@ -1,6 +1,6 @@
-package theInternetTestSuite;
+package Constants;
 
-public class ConstantsTest {
+public class TestConstants {
 
 	public static final String browserNameHomePage = "browserNameHomePage";
 

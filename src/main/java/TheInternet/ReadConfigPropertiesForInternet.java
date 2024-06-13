@@ -28,7 +28,7 @@ public class ReadConfigPropertiesForInternet {
             throw new RuntimeException("Failed to load config properties", ex);
         }
     }
-    
+
     public String getProperty(String key) {
         return config.getProperty(key);
     }

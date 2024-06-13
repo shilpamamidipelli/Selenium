@@ -1,19 +1,20 @@
 package TheInternet;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+import Constants.PageConstants;
+import Utils.UtilityForInternet;
 
 public class HomePage {
-	UtilityForInternet util;
-	WebDriver driver;
+	public UtilityForInternet util;
+	public WebDriver driver;
 	private By pageHeading = By.xpath("//div/h1");
 	private By lastLink = By.xpath("//ul/li[last()]/a[contains(text(),'WYS')]");
-	private By checkBoxlinkLocator = By.linkText("Checkboxes");
+
+	public String checkPagevalue = "HP";
 
 	protected ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet();
 	private static final Logger logger = LogManager.getLogger(HomePage.class);
@@ -23,30 +24,30 @@ public class HomePage {
 		util = new UtilityForInternet();
 	}
 
-	public WebDriver loadHomePage(){
-		
-		String URL = prop.getProperty(Constants.HomePageURL);
+	public void loadHomePage(){
+		String URL = prop.getProperty(PageConstants.HomePageConfig);
+		//logger.debug(URL);
 		this.util.verifyURL(URL);
-		this.driver.get(URL);		
-		return this.driver;
+		this.driver.get(URL);
+		//logger.debug("Open URL check return driver");
 	}
 
-	
-	public boolean isOnRightURL() {
-		return loadHomePage().getCurrentUrl().equals(Constants.HomePageURL);
+	public String getCurrentURL() {
+		//logger.debug("get the current URL");
+		return this.driver.getCurrentUrl();
+
 	}
-	
+
+
+	public boolean isOnRightURL() {
+		return  getCurrentURL().equals("https://the-internet.herokuapp.com/");
+	}
+
 	public String getPageHeading() {
 		return util.getElementText(this.driver, pageHeading);
 	}
-	
-	public CheckBoxPage navigateToCheckBoxPage()  {	
-		if(util.ifURLcontains(this.driver, "the-internet.herokuapp.com")) {
-			 this.driver = util.scrollToLink(this.driver,checkBoxlinkLocator);
-			 util.clickOnElement(this.driver,checkBoxlinkLocator);
-			 return new CheckBoxPage(this.driver);
-		}
-		return null;
-	}	
+
+
+
 
 }

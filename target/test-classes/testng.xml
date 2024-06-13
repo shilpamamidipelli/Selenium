@@ -2,7 +2,8 @@
 <suite name="TestInternetTestSuite">
     <test name="TheInternetTest">
         <classes>
-            <class name="TheInternetTestSuite.TheInternetTest"/>
+            <class name="theInternetTestSuite.HomePageTest"/>
+            <class name="theInternetTestSuite.CheckBoxTest"/>
         </classes>
     </test>
 </suite>

@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +103,17 @@
                     <div class="method-list-content passed suite-TestInternetTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestInternetTestSuite" title="TheInternetTestSuite.TheInternetTest" class="method navigator-link" hash-for-method="NavigateTest">NavigateTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestInternetTestSuite" title="theInternetTestSuite.HomePageTest" class="method navigator-link" hash-for-method="OpenPageTest">OpenPageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestInternetTestSuite" title="TheInternetTestSuite.TheInternetTest" class="method navigator-link" hash-for-method="OpenPageTest">OpenPageTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestInternetTestSuite" title="theInternetTestSuite.CheckBoxTest" class="method navigator-link" hash-for-method="loadCheckBoxPage">loadCheckBoxPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestInternetTestSuite" title="TheInternetTestSuite.TheInternetTest" class="method navigator-link" hash-for-method="testPageHeading">testPageHeading</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestInternetTestSuite" title="TheInternetTestSuite.TheInternetTest" class="method navigator-link" hash-for-method="testScrollPageToEnd">testScrollPageToEnd</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-TestInternetTestSuite" title="theInternetTestSuite.HomePageTest" class="method navigator-link" hash-for-method="testPageHeading">testPageHeading</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-TestInternetTestSuite -->
@@ -136,16 +131,24 @@
           <div class="suite-TestInternetTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TheInternetTestSuite.TheInternetTest</span>
+              <span class="class-name">theInternetTestSuite.CheckBoxTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="NavigateTest">
-                  </a> <!-- NavigateTest -->
-                  <span class="method-name">NavigateTest</span>
+                  <a name="loadCheckBoxPage">
+                  </a> <!-- loadCheckBoxPage -->
+                  <span class="method-name">loadCheckBoxPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestInternetTestSuite-class-passed -->
+          <div class="suite-TestInternetTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">theInternetTestSuite.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="OpenPageTest">
@@ -158,13 +161,6 @@
                   <a name="testPageHeading">
                   </a> <!-- testPageHeading -->
                   <span class="method-name">testPageHeading</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testScrollPageToEnd">
-                  </a> <!-- testScrollPageToEnd -->
-                  <span class="method-name">testScrollPageToEnd</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -181,7 +177,8 @@
 &lt;suite name=&quot;TestInternetTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TheInternetTest&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TheInternetTestSuite.TheInternetTest&quot;/&gt;
+      &lt;class name=&quot;theInternetTestSuite.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;theInternetTestSuite.CheckBoxTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TheInternetTest --&gt;
 &lt;/suite&gt; &lt;!-- TestInternetTestSuite --&gt;
@@ -195,7 +192,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TheInternetTest (1 class)</span>
+                <span class="test-name">TheInternetTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -221,23 +218,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'OpenPageTest')
-data.setCell(0, 2, 'TheInternetTestSuite.TheInternetTest')
-data.setCell(0, 3, 3252);
+data.setCell(0, 2, 'theInternetTestSuite.HomePageTest')
+data.setCell(0, 3, 3216);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testScrollPageToEnd')
-data.setCell(1, 2, 'TheInternetTestSuite.TheInternetTest')
-data.setCell(1, 3, 22);
+data.setCell(1, 1, 'loadCheckBoxPage')
+data.setCell(1, 2, 'theInternetTestSuite.CheckBoxTest')
+data.setCell(1, 3, 339);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testPageHeading')
-data.setCell(2, 2, 'TheInternetTestSuite.TheInternetTest')
-data.setCell(2, 3, 20);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'NavigateTest')
-data.setCell(3, 2, 'TheInternetTestSuite.TheInternetTest')
-data.setCell(3, 3, 1);
+data.setCell(2, 2, 'theInternetTestSuite.HomePageTest')
+data.setCell(2, 3, 17);
 window.suiteTableData['TestInternetTestSuite']= { tableData: data, tableDiv: 'times-div-TestInternetTestSuite'}
 return data;
 }
@@ -257,9 +250,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-TestInternetTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">theInternetTestSuite.CheckBoxTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">closeSession</span>
+                <br/>
+                <span class="ignored-method-name">initTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-TestInternetTestSuite" class="panel">
@@ -268,30 +270,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TheInternetTestSuite.TheInternetTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">theInternetTestSuite.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">NavigateTest</span>
-                <span class="method-start">2004 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">OpenPageTest</span>
-                <span class="method-start">2005 ms</span>
+                <span class="method-start">1173 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPageHeading</span>
-                <span class="method-start">5257 ms</span>
+                <span class="method-start">4390 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">theInternetTestSuite.CheckBoxTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">call</span>
+                <span class="method-start">4408 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">theInternetTestSuite.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">call</span>
+                <span class="method-start">4408 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">theInternetTestSuite.CheckBoxTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testScrollPageToEnd</span>
-                <span class="method-start">5277 ms</span>
+                <span class="method-name">loadCheckBoxPage</span>
+                <span class="method-start">4409 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">theInternetTestSuite.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeSession</span>
-                <span class="method-start">5310 ms</span>
+                <span class="method-start">4758 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

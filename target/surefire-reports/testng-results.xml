@@ -1,37 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-03T13:42:20 AEST" name="TestInternetTestSuite" finished-at="2024-06-03T13:42:23 AEST" duration-ms="3304">
+  <suite started-at="2024-06-13T04:38:57 AEST" name="TestInternetTestSuite" finished-at="2024-06-13T04:39:01 AEST" duration-ms="3585">
     <groups>
     </groups>
-    <test started-at="2024-06-03T13:42:20 AEST" name="TheInternetTest" finished-at="2024-06-03T13:42:23 AEST" duration-ms="3304">
-      <class name="TheInternetTestSuite.TheInternetTest">
-        <test-method is-config="true" signature="initTest()[pri:0, instance:TheInternetTestSuite.TheInternetTest@8317c52]" started-at="2024-06-03T13:42:18 AEST" name="initTest" finished-at="2024-06-03T13:42:20 AEST" duration-ms="1996" status="PASS">
+    <test started-at="2024-06-13T04:38:57 AEST" name="TheInternetTest" finished-at="2024-06-13T04:39:01 AEST" duration-ms="3585">
+      <class name="theInternetTestSuite.CheckBoxTest">
+        <test-method is-config="true" signature="call()[pri:0, instance:theInternetTestSuite.CheckBoxTest@55342f40]" started-at="2024-06-13T04:39:00 AEST" name="call" finished-at="2024-06-13T04:39:00 AEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- call -->
+        <test-method signature="loadCheckBoxPage()[pri:1, instance:theInternetTestSuite.CheckBoxTest@55342f40]" started-at="2024-06-13T04:39:00 AEST" name="loadCheckBoxPage" finished-at="2024-06-13T04:39:01 AEST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadCheckBoxPage -->
+      </class> <!-- theInternetTestSuite.CheckBoxTest -->
+      <class name="theInternetTestSuite.HomePageTest">
+        <test-method is-config="true" signature="initTest()[pri:0, instance:theInternetTestSuite.HomePageTest@5c42d2b7]" started-at="2024-06-13T04:38:56 AEST" name="initTest" finished-at="2024-06-13T04:38:57 AEST" duration-ms="1163" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initTest -->
-        <test-method signature="NavigateTest()[pri:0, instance:TheInternetTestSuite.TheInternetTest@8317c52]" started-at="2024-06-03T13:42:20 AEST" name="NavigateTest" finished-at="2024-06-03T13:42:20 AEST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NavigateTest -->
-        <test-method signature="OpenPageTest()[pri:0, instance:TheInternetTestSuite.TheInternetTest@8317c52]" started-at="2024-06-03T13:42:20 AEST" name="OpenPageTest" finished-at="2024-06-03T13:42:23 AEST" duration-ms="3252" status="PASS">
+        <test-method signature="OpenPageTest()[pri:1, instance:theInternetTestSuite.HomePageTest@5c42d2b7]" started-at="2024-06-13T04:38:57 AEST" name="OpenPageTest" finished-at="2024-06-13T04:39:00 AEST" duration-ms="3216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenPageTest -->
-        <test-method signature="testPageHeading()[pri:0, instance:TheInternetTestSuite.TheInternetTest@8317c52]" started-at="2024-06-03T13:42:23 AEST" name="testPageHeading" finished-at="2024-06-03T13:42:23 AEST" duration-ms="20" status="PASS">
+        <test-method signature="testPageHeading()[pri:2, instance:theInternetTestSuite.HomePageTest@5c42d2b7]" started-at="2024-06-13T04:39:00 AEST" name="testPageHeading" finished-at="2024-06-13T04:39:00 AEST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPageHeading -->
-        <test-method signature="testScrollPageToEnd()[pri:0, instance:TheInternetTestSuite.TheInternetTest@8317c52]" started-at="2024-06-03T13:42:23 AEST" name="testScrollPageToEnd" finished-at="2024-06-03T13:42:23 AEST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="call()[pri:0, instance:theInternetTestSuite.HomePageTest@5c42d2b7]" started-at="2024-06-13T04:39:00 AEST" name="call" finished-at="2024-06-13T04:39:00 AEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testScrollPageToEnd -->
-        <test-method is-config="true" signature="closeSession()[pri:0, instance:TheInternetTestSuite.TheInternetTest@8317c52]" started-at="2024-06-03T13:42:23 AEST" name="closeSession" finished-at="2024-06-03T13:42:23 AEST" duration-ms="0" status="PASS">
+        </test-method> <!-- call -->
+        <test-method is-config="true" signature="closeSession()[pri:0, instance:theInternetTestSuite.HomePageTest@5c42d2b7]" started-at="2024-06-13T04:39:01 AEST" name="closeSession" finished-at="2024-06-13T04:39:01 AEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
-      </class> <!-- TheInternetTestSuite.TheInternetTest -->
+      </class> <!-- theInternetTestSuite.HomePageTest -->
     </test> <!-- TheInternetTest -->
   </suite> <!-- TestInternetTestSuite -->
 </testng-results>

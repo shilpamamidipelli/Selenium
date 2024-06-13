@@ -1,4 +1,5 @@
-package theInternetTestSuite;
+package DriverFactory;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,16 +11,31 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.safari.SafariOptions;
 
-import TheInternet.ExceptionHandling;
+import Constants.TestConstants;
+import TheInternet.ExceptionHandling; 
 import TheInternet.ReadConfigPropertiesForInternet;
+//import Utils.UtilityForInternet;
+//import theInternetTestSuite.ConstantsTest;
+//import TheInternet.CheckBoxPage;
+//import org.openqa.selenium.By;
 
-public class BrowserUtils {
+public class DriverFactory {
 
-	protected WebDriver driver;
+	public WebDriver driver;
 	protected String headless;
-	protected ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet(); 
-	
-	public WebDriver openBrowser(String browserName) throws Exception {
+	protected ReadConfigPropertiesForInternet prop = new ReadConfigPropertiesForInternet();
+	//private By checkBoxlinkLocator = By.linkText("Checkboxes");
+	public  WebDriver openBrowser() {
+		try {
+			this.driver = chooseBrowser(prop.getProperty(TestConstants.browserNameHomePage));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return this.driver;
+	}
+
+	public WebDriver chooseBrowser(String browserName) throws Exception {
 		headless = prop.getProperty("headless");
 		switch (browserName) {
 		case "Chrome":

@@ -22,8 +22,8 @@ public class Locators {
 		// class name
 		//driver.findElement(By.className("email text")).sendKeys("Shilpa" + System.currentTimeMillis() + "@gmail.com");
 		// driver.findElement(By.id("Form_getForm_Email")).sendKeys("Shilpa"+System.currentTimeMillis()+"@gmail.com");
-		
-		// css 
+
+		// css
 		//driver.findElement(By.cssSelector(""));
 		driver.findElement(By.id("Form_getForm_Contact")).sendKeys("9441731171");
 
@@ -31,15 +31,15 @@ public class Locators {
 		driver.findElement(By.xpath("//select[@name='Country']/option[4]")).click();
 
 	}
-	
+
 	public void function2() {
-		
+
 	}
 	public void function() {
-		
+
 	}
 	public void function3() {
-		
+
 	}
 
 }

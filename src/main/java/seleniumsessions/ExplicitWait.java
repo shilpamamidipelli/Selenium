@@ -5,11 +5,11 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ExplicitWait {
 
@@ -33,14 +33,14 @@ public class ExplicitWait {
 		waitForElementAndSendKeys(emailLocator);
 		waitForElementAndSendKeys(passwordLocator);
 		waitForElementAndClick(submitButton);
-		
-		waitForElementAndClick(LinkText);	
+
+		waitForElementAndClick(LinkText);
 		waitForElementAndClick(LoginLink);
-		
+
 		waitForElementAndClick(PartialLinkText);
-		
-		
-		// drawback in the above code is functionally the code is more readable 
+
+
+		// drawback in the above code is functionally the code is more readable
 		//driver.quit();
 	}
 

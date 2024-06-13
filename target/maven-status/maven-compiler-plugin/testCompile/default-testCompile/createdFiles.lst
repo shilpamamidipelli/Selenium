@@ -1,4 +1,3 @@
-TheInternetTestSuite/ConstantsTest.class
-TheInternetTestSuite/TheInternetTest.class
-TheInternetTestSuite/BrowserUtils.class
-TheInternetTestSuite/BaseTest.class
+theInternetTestSuite/HomePageTest.class
+theInternetTestSuite/CheckBoxTest.class
+theInternetTestSuite/BaseTest.class
