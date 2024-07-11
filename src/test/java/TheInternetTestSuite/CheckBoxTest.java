@@ -19,17 +19,6 @@ public class CheckBoxTest extends BaseTest {
 			System.err.println("driver isas null!");
 
 		}
-		
-		if(homePage ==null)
-		{
-			System.err.println("homepage is null!");
-		}
-		
-		if(chkPage ==null)
-		{
-			System.err.println("chkPage is null!");
-		}
-		
 		else {
 			chkPage = new CheckBoxPage(driver);
 		}
